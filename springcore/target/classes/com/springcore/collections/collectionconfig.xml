@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context=" http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+  <bean class="com.springcore.collections.QuestionList" name="q1">
+  
+   <property name="questionId" >
+  <value>101</value>
+  </property>
+  
+  <property name="question">
+  <value>Whats your name?</value>
+  </property>
+  
+  <property name="answers">
+  <list>
+  <value>abc</value>
+  <value>xyz</value>
+  <value>lmn</value>
+  </list>
+  </property>
+ 
+ </bean>
+ 
+ 
+ <bean class="com.springcore.collections.QuestionSet" name="qset">
+  
+   <property name="questionId" >
+  <value>101</value>
+  </property>
+  
+  <property name="question">
+  <value>Whats your city?</value>
+  </property>
+  
+  <property name="answers">
+  <set>
+  <value>amritsar</value>
+  <value>ludhiana</value>
+  <value>chandigarh</value>
+  </set>
+  </property>
+ 
+ </bean>
+ 
+ 
+ <bean class="com.springcore.collections.QuestionMap" name="qmap">
+  
+   <property name="questionId" >
+  <value>101</value>
+  </property>
+  
+  <property name="question">
+  <value>Write anything</value>
+  </property>
+  
+  <property name="answers">
+  <map>
+  <entry key="7" value="hi world"/>
+  <entry key="9" value="bye bye"/>
+  <entry key="2" value="how are you"/>
+  
+  </map>
+  </property>
+ 
+ </bean>
+ </beans>
