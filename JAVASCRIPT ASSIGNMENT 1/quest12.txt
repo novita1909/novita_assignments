@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+    <script>
+         const str = (prompt('Enter a string: '));
+         function longestToken(str)
+        {
+            document.write(x);
+	    var x="";
+            var y="";
+            for(let i=0;i<str.length;i++){
+                if(str[i]==="a"||str[i]==="b"){
+                    if(x.length<y.length) x=y;
+                    y="";
+                }
+                else
+                {
+                    y=y+str[i];
+                }
+            } if(x.length<y.length) x=y;
+            document.write(x);
+        }
+        longestToken(str);
+    </script>
+</body>
+</html>
