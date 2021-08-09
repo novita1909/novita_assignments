@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+         const a = parseInt(prompt('Enter a Year: '));
+
+        function leapprint(a){
+            for(i=1;i<=20;i++){
+                a=a+4;
+                document.write(" "+a);
+            }
+            
+        }
+        leapprint(a);
+        
+    </script>
+</body>
+</html>
