@@ -1,0 +1,9 @@
+let arr = ["abc", "jack", "harry"];
+for (let i of arr) {
+    document.write("<br>");
+    document.write("[{");
+
+    var a = () => " name: " + i + " length " + i.length;
+    document.write(a() + ",");
+}
+document.write("}]");
